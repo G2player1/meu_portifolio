@@ -13,21 +13,23 @@
     <!-- HEADER -->
     <header class="header">
         <nav class="header__nav">
-            <a class="header__nav-link header__nav-link--active" id="1" href="#hero" onclick="troca('1')">􀎞 Home</a>
-            <a class="header__nav-link" id="2" href="#about" onclick="troca('2')">􀉩 Sobre mim</a>
-            <a class="header__nav-link" id="3" href="#resume" onclick="troca('3')">􀉇 Currículo</a>
-            <a class="header__nav-link" id="4" href="#projects-content" onclick="troca('4')">􀈕 Projetos</a>
+            <a class="header__nav-link header__nav-link--active" id="1" href="#hero-anchor" onclick="troca('1')">􀎞</a>
+            <a class="header__nav-link" id="2" href="#about-anchor" onclick="troca('2')">􀉩</a>
+            <a class="header__nav-link" id="4" href="#projects-anchor" onclick="troca('4')">􀈕</a>
+            <a class="header__nav-link" id="3" href="#resume-anchor" onclick="troca('3')">􀉇</a>
         </nav>
     </header>
 
+    <!-- MAIN -->
     <main class="apresentacao">
         <!-- HOME SECTION -->
+        <div class="anchor" id="hero-anchor"></div>
         <section class="section section--hero section--selector" id="hero">
             <div class="hero__content">
                 <div class="hero__text">
                     <h1 class="hero__title">
-                        Eleve seu negócio digital a outro nível com um
-                        <span class="hero__title-highlight">Back-end de qualidade!</span>
+                        Eleve seu negócio a outro nível com um 
+                        <span class="hero__title-highlight">Software de qualidade!</span>
                     </h1>
                     <p class="hero__description">
                         Olá! Sou Enos Henrique, desenvolvedor Back-End com foco no ecossistema Spring.
@@ -58,8 +60,8 @@
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="section section--spacer section--selector" id="about"></section>
-        <section class="section section--about" id="about-content">
+        <div class="anchor" id="about-anchor"></div>
+        <section class="section section--about section--selector" id="about">
             <div class="about__content">
                 <div class="about__text">
                     <h2 class="about__title">Sobre mim!</h2>
@@ -165,47 +167,9 @@
             </div>
         </section>
 
-        <!-- RESUME SECTION -->
-        <section class="section section--spacer section--selector" id="resume"></section>
-        <section class="section section--resume" id="resume-content">
-            <div class="resume__content">
-                <h2 class="resume__title">Certificações e Currículo</h2>
-                <div class="resume__document">
-                    <div class="resume__options-container">
-                        <ul class="resume__options-list">
-                            <li class="resume__option" onclick="trocarCertificado(5)">
-                                <p class="resume__option__text">Git e Github</p>
-                            </li>
-                            <li class="resume__option" onclick="trocarCertificado(7)">
-                                <p class="resume__option__text">HTML e CSS</p>
-                            </li>
-                            <li class="resume__option" onclick="trocarCertificado(4)">
-                                <p class="resume__option__text">Java e POO</p>
-                            </li>
-                            <li class="resume__option" onclick="trocarCertificado(1)">
-                                <p class="resume__option__text">Liga Jovem</p>
-                            </li>
-                            <li class="resume__option" onclick="trocarCertificado(6)">
-                                <p class="resume__option__text">Lógica e JS</p>
-                            </li>
-                            <li class="resume__option" onclick="trocarCertificado(3)">
-                                <p class="resume__option__text">SpringBoot</p>
-                            </li>
-                            <li class="resume__option" onclick="trocarCertificado(2)">
-                                <p class="resume__option__text">ONE</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="resume__certificado-container">
-                        <img src="./assets/certificados/Certificado_SpringBoot_1.jpg" alt="Certificado_SpringBoot" class="resume__certificado" id="certificado">
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- PROJECTS SECTION -->
-        <section class="section section--spacer" id="projects"></section>
-        <section class="section section--projects section--selector" id="projects-content">
+        <div class="anchor" id="projects-anchor"></div>
+        <section class="section section--projects section--selector" id="projects">
             <div class="projects__content">
                 <h2 class="projects__title">Meus Projetos</h2>
                 <div class="projects__grid">
@@ -289,6 +253,44 @@
                                 Demo
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME SECTION -->
+        <div class="anchor" id="resume-anchor"></div>
+        <section class="section section--resume section--selector" id="resume">
+            <div class="resume__content">
+                <h2 class="resume__title">Certificações e Currículo</h2>
+                <div class="resume__document">
+                    <div class="resume__options-container">
+                        <ul class="resume__options-list">
+                            <li class="resume__option" onclick="trocarCertificado(5)">
+                                <p class="resume__option__text">Git e Github</p>
+                            </li>
+                            <li class="resume__option" onclick="trocarCertificado(7)">
+                                <p class="resume__option__text">HTML e CSS</p>
+                            </li>
+                            <li class="resume__option" onclick="trocarCertificado(4)">
+                                <p class="resume__option__text">Java e POO</p>
+                            </li>
+                            <li class="resume__option" onclick="trocarCertificado(1)">
+                                <p class="resume__option__text">Liga Jovem</p>
+                            </li>
+                            <li class="resume__option" onclick="trocarCertificado(6)">
+                                <p class="resume__option__text">Lógica e JS</p>
+                            </li>
+                            <li class="resume__option" onclick="trocarCertificado(3)">
+                                <p class="resume__option__text">SpringBoot</p>
+                            </li>
+                            <li class="resume__option" onclick="trocarCertificado(2)">
+                                <p class="resume__option__text">ONE</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume__certificado-container">
+                        <img src="./assets/certificados/Certificado_SpringBoot_1.jpg" alt="Certificado_SpringBoot" class="resume__certificado" id="certificado">
                     </div>
                 </div>
             </div>

@@ -48,7 +48,7 @@ const observer = new IntersectionObserver(
 
         // pega o link que aponta para a seção visível
         const id = entry.target.getAttribute("id");
-        const activeLink = document.querySelector(`.header__nav-link[href="#${id}"]`);
+        const activeLink = document.querySelector(`.header__nav-link[href="#${id}-anchor"]`);
 
         if (activeLink) {
           activeLink.classList.add("header__nav-link--active");
