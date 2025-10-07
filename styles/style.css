@@ -1020,7 +1020,7 @@ html {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .body {
         overflow-x: hidden;
@@ -1245,8 +1245,17 @@ html {
         padding: 3%;
     }
 
+    .about__content {
+        flex-direction: column;
+    }
+
     .about__text {
         width: 100%;
+    }
+
+    .about__skills {
+        width: 100%;
+
     }
 }
 
